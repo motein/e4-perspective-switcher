@@ -50,6 +50,9 @@ public class PerspectiveLabelProvider extends LabelProvider implements ITableLab
 	 */
 	private boolean markActive = true;
 
+	/* (non-Javadoc)
+	 * @see org.eclipse.jface.viewers.LabelProvider#getImage(java.lang.Object)
+	 */
 	@Override
 	public final Image getImage(Object element) {
 		Assert.isTrue(element instanceof MPerspective);
