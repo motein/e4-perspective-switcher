@@ -26,3 +26,4 @@ Export-Package: org.eclipse.e4.ui.workbench.perspectiveswitcher.commands,
  org.eclipse.e4.ui.workbench.perspectiveswitcher.tools
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
+Automatic-Module-Name: org.eclipse.e4.ui.workbench.perspectiveswitcher
