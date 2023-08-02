@@ -80,6 +80,9 @@ public class PerspectiveLabelProvider extends LabelProvider implements ITableLab
 		return icon;
 	}
 
+	/* (non-Javadoc)
+	 * @see org.eclipse.jface.viewers.BaseLabelProvider#dispose()
+	 */
 	@Override
 	public final void dispose() {
 		for (Image image : imageCache.values()) {
@@ -88,6 +91,9 @@ public class PerspectiveLabelProvider extends LabelProvider implements ITableLab
 		imageCache.clear();
 	}
 
+	/* (non-Javadoc)
+	 * @see org.eclipse.jface.viewers.LabelProvider#getText(java.lang.Object)
+	 */
 	@Override
 	public final String getText(Object element) {
 		String label = translationService.translate("unknown",
@@ -109,11 +115,17 @@ public class PerspectiveLabelProvider extends LabelProvider implements ITableLab
 		return label;
 	}
 
+	/* (non-Javadoc)
+	 * @see org.eclipse.jface.viewers.ITableLabelProvider#getColumnImage(java.lang.Object, int)
+	 */
 	@Override
 	public final Image getColumnImage(Object element, int columnIndex) {
 		return getImage(element);
 	}
 
+	/* (non-Javadoc)
+	 * @see org.eclipse.jface.viewers.ITableLabelProvider#getColumnText(java.lang.Object, int)
+	 */
 	@Override
 	public final String getColumnText(Object element, int columnIndex) {
 		return getText(element);

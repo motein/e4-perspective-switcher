@@ -111,6 +111,12 @@ public class SelectPerspectiveDialog extends Dialog implements
 
         createViewer(composite);
         layoutTopControl(viewer.getControl());
+        
+        // Not applicable in E4, unless there is a usecase for showing
+        // perspective not in the current window.
+        // if (needsShowAllButton()) {
+        //	createShowAllButton(composite);
+        // }
 
         // Return results.
         return composite;
